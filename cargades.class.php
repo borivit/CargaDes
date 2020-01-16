@@ -227,10 +227,10 @@ class CargaDes {
 	 * @param string 	$remoteUrl 	- Путь к удаленному серверу.
 	 * @param string 	$realFilePath 	- Полный путь куда кладем скачанный файл
 	 * @param int 		$progress	- Подключение индикатора
-	 * @param string	$login		- Логин отправляемый на сервер
-	 * @param string	$pass		- Пароль отправляемый на сервер
+	 * @param string	$login		- Логин отправляемый на сервер, если есть авторизация типа .htaccess
+	 * @param string	$pass		- Пароль отправляемый на сервер, если есть авторизация типа .htaccess
 	 * @param int 		$speedS		- Ограничение скорости
-	 * @return - тип файла
+	 * @return - false или текст ошибки
 	 */
 	public static function _serverD($remoteUrl, $realFilePath, $progress=1, $login=0, $pass=0, $speedS=0){
 		$login = !$login?self::$l:$login;
@@ -288,7 +288,7 @@ class CargaDes {
 	 * Отдаем файл на удаленный сервер со своего сервера - CargaDes::_serverU($remoteUrl, $fileU, $progress, $login, $pass, $speedU);
 	 *******************************************************************
 	 * @param string	$remoteUrl 	- Путь к удаленному серверу.
-	 * @param string/array 	$fileU		- Массив для POST отправки.
+	 * @param array 	$fileU		- Массив для POST отправки.
 	 * @param int 		$progress	- Подключение индикатора
 	 * @param string	$login		- Логин отправляемый на сервер, если есть авторизация типа .htaccess
 	 * @param string	$pass		- Пароль отправляемый на сервер, если есть авторизация типа .htaccess
@@ -305,7 +305,7 @@ class CargaDes {
 				$progressCallback = function( $download_size, $downloaded_size, $upload_size, $uploaded_size ){
 					$proc = @round($uploaded_size / $upload_size  * 100);
 					if($upload_size > 0) echo '<script id="sct">updateProgress("'.$proc.'");</script>';flush();
-					if( $upload_size <= 1500000 ) usleep(30000); // just to see effect
+					//if( $upload_size <= 1500000 ) usleep(30000); // just to see effect
 					if( $proc >= 100 ) return;
 				};
 			}
@@ -314,7 +314,7 @@ class CargaDes {
 				$progressCallback = function( $resource, $download_size, $downloaded_size, $upload_size, $uploaded_size ){
 					$proc = @round($uploaded_size / $upload_size  * 100);
 					if($upload_size > 0) echo '<script id="sct">updateProgress("'.$proc.'");</script>';flush();
-					if( $upload_size <= 1500000 ) usleep(30000); // just to see effect
+					//if( $upload_size <= 1500000 ) usleep(30000); // just to see effect
 					if( $proc >= 100 ) return;
 				};
 			}
@@ -438,8 +438,8 @@ class CargaDes {
 	public static $btn_input = 0;//Имя кнопки выбора файлов
 	public static $btn_enviar = 0;//Имя кнопки отправки файлов
 	public static $btn_del = 0;//Имя кнопки удаления файлов из очереди
-	public static $color = 0;//Цвет линии прогресса загрузки
-	public static $css = 0;//Путь к файлу стилей
+	public static $color = '4098D3';//Цвет линии прогресса загрузки
+	public static $css = '/';//Путь к файлу стилей
 	
 	public static function _clientU($url_server, $multiple=0){
 		
@@ -453,8 +453,6 @@ class CargaDes {
 		$btn_input = !self::$btn_input?'Выбор файлов для загрузки':self::$btn_input;
 		$btn_enviar = !self::$btn_enviar?'Загрузить':self::$btn_enviar;
 		$btn_del = !self::$btn_del?'x':self::$btn_del;
-		$color = !self::$color?'4098D3':self::$color;
-		$css = !self::$css?'/':self::$css;
 		
 		return '
 		<link rel="stylesheet" type="text/css" href="'.$css.'style.cargades.css?v=2" />
