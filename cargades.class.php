@@ -439,6 +439,7 @@ class CargaDes {
 	public static $btn_enviar = 0;//Имя кнопки отправки файлов
 	public static $btn_del = 0;//Имя кнопки удаления файлов из очереди
 	public static $color = 0;//Цвет линии прогресса загрузки
+	public static $css = 0;//Путь к файлу стилей
 	
 	public static function _clientU($url_server, $multiple=0){
 		
@@ -453,9 +454,10 @@ class CargaDes {
 		$btn_enviar = !self::$btn_enviar?'Загрузить':self::$btn_enviar;
 		$btn_del = !self::$btn_del?'x':self::$btn_del;
 		$color = !self::$color?'4098D3':self::$color;
+		$css = !self::$css?'/':self::$css;
 		
 		return '
-		<link rel="stylesheet" type="text/css" href="http://bm/bss/cps/shkurka/Default/style/system/style.cargades.css?v=2" />
+		<link rel="stylesheet" type="text/css" href="'.$css.'style.cargades.css?v=2" />
 		<script>
 			function RemovE(id){
 				document.getElementById(id).remove();
