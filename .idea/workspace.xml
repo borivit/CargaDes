@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SPLITTER_PROPORTION" value="0.5122378" />
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a9dc9d2c-0fc7-4aea-acfc-cee4f37d7744" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <executable path="composer" />
+    </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/composer" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1WygQwTO2C7YbVaRSQBR0dGF9RD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="dumpAutoload C:/Users/LanPort80/PhpstormProjects/CargaDes/composer.json" value="--no-interaction --ansi --verbose" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/rama_1" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\LanPort80\PhpstormProjects\CargaDes\rama_1" />
+      <recent name="C:\Users\LanPort80\PhpstormProjects\CargaDes\rama_2" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\LanPort80\PhpstormProjects\CargaDes" />
+      <recent name="C:\Users\LanPort80\PhpstormProjects\CargaDes\rama_1" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="rama_2" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner directory="$PROJECT_DIR$/rama_2" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a9dc9d2c-0fc7-4aea-acfc-cee4f37d7744" name="Default Changelist" comment="" />
+      <created>1580127235501</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580127235501</updated>
+      <workItem from="1580127239425" duration="7334000" />
+      <workItem from="1580139072245" duration="2365000" />
+    </task>
+    <task id="LOCAL-00001" summary="Было исправлено много ошибок">
+      <created>1580130699139</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1580130699140</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Было исправлено много ошибок">
+      <created>1580131378296</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1580131378296</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Изменения в описании">
+      <created>1580135890342</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1580135890342</updated>
+    </task>
+    <task id="LOCAL-00004" summary="маленькая модивикация">
+      <created>1580139854235</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1580139854235</updated>
+    </task>
+    <task id="LOCAL-00005" summary="маленькая модификация">
+      <created>1580140866450</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1580140866450</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Было исправлено много ошибок" />
+    <MESSAGE value="Изменения в описании" />
+    <MESSAGE value="маленькая модивикация" />
+    <MESSAGE value="маленькая модификация" />
+    <option name="LAST_COMMIT_MESSAGE" value="маленькая модификация" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="272" y="64" key="#Composer" timestamp="1580135165398">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="272" y="64" key="#Composer/0.0.1280.760@0.0.1280.760" timestamp="1580135165398" />
+    <state x="272" y="40" key="#Deployment" timestamp="1580139840277">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="272" y="40" key="#Deployment/0.0.1280.760@0.0.1280.760" timestamp="1580139840277" />
+    <state x="410" y="0" key="#PHP" timestamp="1580131031075">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="410" y="0" key="#PHP/0.0.1280.760@0.0.1280.760" timestamp="1580131031075" />
+    <state x="376" y="74" width="621" height="660" key="#rama_2" timestamp="1580131034804">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="376" y="74" width="621" height="660" key="#rama_2/0.0.1280.760@0.0.1280.760" timestamp="1580131034804" />
+    <state x="431" y="272" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1580130027410">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="431" y="272" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.760@0.0.1280.760" timestamp="1580130027410" />
+    <state x="318" y="0" key="CommitChangelistDialog2" timestamp="1580140864767">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="318" y="0" key="CommitChangelistDialog2/0.0.1280.760@0.0.1280.760" timestamp="1580140864767" />
+    <state x="496" y="295" key="ComposerDumpAutoloadDialog" timestamp="1580139210680">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="496" y="295" key="ComposerDumpAutoloadDialog/0.0.1280.760@0.0.1280.760" timestamp="1580139210680" />
+    <state x="464" y="322" key="ComposerInitDialogKey" timestamp="1580127678940">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="464" y="322" key="ComposerInitDialogKey/0.0.1280.760@0.0.1280.760" timestamp="1580127678940" />
+    <state width="1200" height="166" key="GridCell.Tab.0.bottom" timestamp="1580136075168">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1200" height="166" key="GridCell.Tab.0.bottom/0.0.1280.760@0.0.1280.760" timestamp="1580136075168" />
+    <state width="1200" height="166" key="GridCell.Tab.0.center" timestamp="1580136075168">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1200" height="166" key="GridCell.Tab.0.center/0.0.1280.760@0.0.1280.760" timestamp="1580136075168" />
+    <state width="1200" height="166" key="GridCell.Tab.0.left" timestamp="1580136075168">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1200" height="166" key="GridCell.Tab.0.left/0.0.1280.760@0.0.1280.760" timestamp="1580136075168" />
+    <state width="1200" height="166" key="GridCell.Tab.0.right" timestamp="1580136075168">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1200" height="166" key="GridCell.Tab.0.right/0.0.1280.760@0.0.1280.760" timestamp="1580136075168" />
+    <state x="412" y="220" key="PHPComposerAddDependencyDialogDimensionKey" timestamp="1580141026484">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="412" y="220" key="PHPComposerAddDependencyDialogDimensionKey/0.0.1280.760@0.0.1280.760" timestamp="1580141026484" />
+    <state x="272" y="139" key="Vcs.Push.Dialog.v2" timestamp="1580140885021">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="272" y="139" key="Vcs.Push.Dialog.v2/0.0.1280.760@0.0.1280.760" timestamp="1580140885021" />
+    <state x="491" y="322" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580131386501">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="491" y="322" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.760@0.0.1280.760" timestamp="1580131386501" />
+  </component>
+</project>
