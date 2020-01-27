@@ -9,37 +9,44 @@
 ```php
 <?php
 
-include cargades.class.php
+$CargaDes = new CargaDes;
 
-//--- Скачивание файла с сервера через браузер
+//--- Отдаем файл пользователю через браузер
 $realFilePath = dirname(  __FILE__ ) . file.zip;
-new CargaDes( $realFilePath );
+$CargaDes->setOnStart(new Exe(new ClientD($realFilePath)));
+$CargaDes->Start();
+
+//--- Загрузка файлов на сервер через браузер с индикацией прогресса
+$client_u = new ClientU('http://borivit.com/test/priem.php', 1);
+$CargaDes->setOnStart(new Exe($client_u, 'p' ));
+echo $CargaDes->Start();
 
 //--- Забераем файл с удаленного сервера на свой сервер
-echo CargaDes::_serverProgress();
+$server = new Server();
+$CargaDes->setOnStart(new Exe($server, 'p'));//Код индикатора
+echo $CargaDes->Start();
 
-$remoteUrl = 'http://borivit.com/test/file.zip';
-$realFilePath = dirname(  __FILE__ );
+$server->remoteUrl = 'http://borivit.com/test/file.zip';
+$server->realFilePath = dirname(  __FILE__ ) . '/file.zip';
 
-$result = CargaDes::_serverD($remoteUrl, $realFilePath);
+$CargaDes->setOnStart(new Exe($server, 's'));
+$result = $CargaDes->Start();
 	
 if( $result != false ) {die('Error:'. $result);}
 
 //--- Отдаем файл на удаленный сервер со своего сервера
-echo CargaDes::_serverProgress();
+$server = new Server();
+$CargaDes->setOnStart(new Exe($server, 'p'));//Код индикатора
+echo $CargaDes->Start();
 
-$post_files = dirname(  __FILE__ ) . file.zip;//Можно использовать массив файлов
-$post = array( 'login' => 'test', 'pass' => '12345' );//Любые значения которые вы хотите передать на сервер
-$fileU = CargaDes::_serverFiles($post_files, $post);
-	
-if( !$fileU ) {die('Error array');}
-	
-$result = CargaDes::_serverU("http://borivit.com/test/priem.php",$fileU);
+$server->remoteUrl = 'http://borivit.com/test/priem.php';
+$server->realFilePath = dirname(  __FILE__ ) . file.zip;//Можно использовать массив файлов
+$server->post = array( 'login' => 'test', 'pass' => '12345' );//Любые значения которые вы хотите передать на сервер
+
+$CargaDes->setOnStart(new Exe($server, 'u'));
+$result = $CargaDes->Start();
 	
 if( $result != false ) {die('Error:'. $result);}
-
-//--- Загрузка файлов на сервер через браузер с индикацией процесса
-echo CargaDes::_clientU("http://borivit.com/test/priem.php");
 
 ?>
 ```
