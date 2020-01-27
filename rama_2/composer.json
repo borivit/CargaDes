@@ -1,0 +1,17 @@
+{
+  "authors": [
+    {
+      "name": "Borys Nazarenkov",
+      "email": "59554169+borivit@users.noreply.github.com"
+    }
+  ],
+  "description": "Carga y descarga",
+  "license": "proprietary",
+  "minimum-stability": "stable",
+  "name": "borivit/cargades",
+  "require": {
+    "ext-json": "*",
+    "ext-curl": "*",
+    "ext-fileinfo": "*"
+  }
+}
