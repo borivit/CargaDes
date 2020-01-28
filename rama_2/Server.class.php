@@ -207,7 +207,7 @@ class Server extends Tecno
         fwrite($fh, $result);
         fclose($fh);
 
-        return $result;
+        return false;
     }
 
     /*******************************************
