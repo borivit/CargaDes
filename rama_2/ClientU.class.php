@@ -20,7 +20,7 @@ class ClientU extends Tecno
     public $btn_input;//Имя кнопки выбора файлов
     public $btn_enviar;//Имя кнопки отправки файлов
     public $btn_del;//Имя кнопки удаления файлов из очереди
-    public $style = '/bss/cps/shkurka/Default/style/system/style.cargades.css';
+    public $style = '/style.cargades.css';//Подключение стиля
     public $color = '4098D3';//Цвет линии прогресса загрузки
     public $debug = false;
     public $lang = 'ru';

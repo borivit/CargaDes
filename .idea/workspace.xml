@@ -5,18 +5,8 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a9dc9d2c-0fc7-4aea-acfc-cee4f37d7744" name="Default Changelist" comment="исправление ошибок">
-      <change beforePath="$PROJECT_DIR$/.idea/CargaDes.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CargaDes.iml" afterDir="false" />
+    <list default="true" id="a9dc9d2c-0fc7-4aea-acfc-cee4f37d7744" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/autoload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
     </list>
     <list id="9ab98ed0-f7a5-4b84-b4e6-09e877f9bd50" name="Add files via upload" comment="" />
     <list id="acdc09ee-4186-45d0-ac10-402a94985bdc" name="Revert &quot;маленькая модификация&quot;" comment="" />
@@ -58,7 +48,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dumpAutoload C:/Users/LanPort80/PhpstormProjects/CargaDes/composer.json" value="--no-interaction --ansi --verbose --optimize" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/rama_1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/rama_2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="validate C:/Users/LanPort80/PhpstormProjects/CargaDes/composer.json" value="--no-interaction --ansi --verbose --with-dependencies" />
   </component>
@@ -102,7 +92,7 @@
       <updated>1580127235501</updated>
       <workItem from="1580127239425" duration="7334000" />
       <workItem from="1580139072245" duration="2365000" />
-      <workItem from="1580209150673" duration="532000" />
+      <workItem from="1580209150673" duration="1265000" />
     </task>
     <task id="LOCAL-00001" summary="Было исправлено много ошибок">
       <created>1580130699139</created>
@@ -139,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580140866450</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="исправление ошибок">
+      <created>1580209765448</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1580209765448</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,10 +147,35 @@
       <map>
         <entry key="1">
           <value>
-            <State />
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
+    </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+      </set>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
@@ -186,10 +208,10 @@
       <screen x="0" y="0" width="1280" height="760" />
     </state>
     <state x="431" y="272" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.760@0.0.1280.760" timestamp="1580130027410" />
-    <state x="318" y="0" key="CommitChangelistDialog2" timestamp="1580209698406">
+    <state x="318" y="0" key="CommitChangelistDialog2" timestamp="1580209764082">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state x="318" y="0" key="CommitChangelistDialog2/0.0.1280.760@0.0.1280.760" timestamp="1580209698406" />
+    <state x="318" y="0" key="CommitChangelistDialog2/0.0.1280.760@0.0.1280.760" timestamp="1580209764082" />
     <state x="496" y="295" key="ComposerDumpAutoloadDialog" timestamp="1580209354306">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
@@ -226,10 +248,10 @@
       <screen x="0" y="0" width="1280" height="760" />
     </state>
     <state x="412" y="220" key="PHPComposerAddDependencyDialogDimensionKey/0.0.1280.760@0.0.1280.760" timestamp="1580208959573" />
-    <state x="272" y="139" key="Vcs.Push.Dialog.v2" timestamp="1580140885021">
+    <state x="272" y="139" key="Vcs.Push.Dialog.v2" timestamp="1580209812942">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state x="272" y="139" key="Vcs.Push.Dialog.v2/0.0.1280.760@0.0.1280.760" timestamp="1580140885021" />
+    <state x="272" y="139" key="Vcs.Push.Dialog.v2/0.0.1280.760@0.0.1280.760" timestamp="1580209812942" />
     <state x="491" y="322" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580208877779">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
