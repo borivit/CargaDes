@@ -45,7 +45,7 @@ class Server extends Tecno
             return $this->serverD();
         } elseif ($type == 'u') {
             $fileU = $this->serverFiles();
-            if (!$fileU) return array("result"=>$this->msg('error_4', $this->lang), "test"=>false);
+            if (!$fileU) return array("result" => '<br>' . $this->msg('error_4', $this->lang), "test" => false);
             return $this->serverU($fileU);
         }
         return true;
@@ -119,10 +119,18 @@ class Server extends Tecno
 
         //Отладка
         if ($this->debug) {
+            echo '<br>var_dump: ';
             var_dump($result);
-            echo '<br>';
+            echo '<br>curl_getinfo: <br>';
             foreach ($info as $i => $key) {
-                echo $i . ' -> ' . $key . '<br>';
+                if (!is_array($key)) {
+                    echo $i . ' -> ' . $key . '<br>';
+                }
+                else {
+                    echo $i . ' -> ';
+                    print_r($key);
+                    echo '<br>';
+                }
             }
         }
 

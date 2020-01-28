@@ -7,6 +7,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a9dc9d2c-0fc7-4aea-acfc-cee4f37d7744" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rama_2/Server.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/rama_2/Server.class.php" afterDir="false" />
     </list>
     <list id="9ab98ed0-f7a5-4b84-b4e6-09e877f9bd50" name="Add files via upload" comment="" />
     <list id="acdc09ee-4186-45d0-ac10-402a94985bdc" name="Revert &quot;маленькая модификация&quot;" comment="" />
@@ -94,7 +95,7 @@
       <workItem from="1580127239425" duration="7334000" />
       <workItem from="1580139072245" duration="2365000" />
       <workItem from="1580209150673" duration="1265000" />
-      <workItem from="1580213330026" duration="7584000" />
+      <workItem from="1580213330026" duration="9665000" />
     </task>
     <task id="LOCAL-00001" summary="Было исправлено много ошибок">
       <created>1580130699139</created>
@@ -180,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580243058389</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="исправление ошибок">
+      <created>1580245322888</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1580245322888</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,10 +260,10 @@
       <screen x="0" y="0" width="1280" height="760" />
     </state>
     <state x="431" y="272" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.760@0.0.1280.760" timestamp="1580130027410" />
-    <state x="318" y="0" key="CommitChangelistDialog2" timestamp="1580243054472">
+    <state x="318" y="0" key="CommitChangelistDialog2" timestamp="1580245321632">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state x="318" y="0" key="CommitChangelistDialog2/0.0.1280.760@0.0.1280.760" timestamp="1580243054472" />
+    <state x="318" y="0" key="CommitChangelistDialog2/0.0.1280.760@0.0.1280.760" timestamp="1580245321632" />
     <state x="496" y="295" key="ComposerDumpAutoloadDialog" timestamp="1580209354306">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
@@ -292,10 +300,10 @@
       <screen x="0" y="0" width="1280" height="760" />
     </state>
     <state x="412" y="220" key="PHPComposerAddDependencyDialogDimensionKey/0.0.1280.760@0.0.1280.760" timestamp="1580208959573" />
-    <state x="272" y="139" key="Vcs.Push.Dialog.v2" timestamp="1580243070478">
+    <state x="272" y="139" key="Vcs.Push.Dialog.v2" timestamp="1580245701793">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state x="272" y="139" key="Vcs.Push.Dialog.v2/0.0.1280.760@0.0.1280.760" timestamp="1580243070478" />
+    <state x="272" y="139" key="Vcs.Push.Dialog.v2/0.0.1280.760@0.0.1280.760" timestamp="1580245701793" />
     <state x="491" y="322" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580208877779">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
