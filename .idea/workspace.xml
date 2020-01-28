@@ -5,13 +5,29 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a9dc9d2c-0fc7-4aea-acfc-cee4f37d7744" name="Default Changelist" comment="" />
+    <list default="true" id="a9dc9d2c-0fc7-4aea-acfc-cee4f37d7744" name="Default Changelist" comment="исправление ошибок">
+      <change beforePath="$PROJECT_DIR$/.idea/CargaDes.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CargaDes.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/autoload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+    </list>
+    <list id="9ab98ed0-f7a5-4b84-b4e6-09e877f9bd50" name="Add files via upload" comment="" />
+    <list id="acdc09ee-4186-45d0-ac10-402a94985bdc" name="Revert &quot;маленькая модификация&quot;" comment="" />
+    <list id="b0d6bd05-5855-4cd8-a0f0-7417fb983b2c" name="маленькая модивикация" comment="" />
+    <list id="5ef85fbc-d631-49a6-8073-7a885859b886" name="маленькая модификация" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" doNotAsk="true">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable path="composer" />
@@ -41,9 +57,10 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="dumpAutoload C:/Users/LanPort80/PhpstormProjects/CargaDes/composer.json" value="--no-interaction --ansi --verbose" />
+    <property name="dumpAutoload C:/Users/LanPort80/PhpstormProjects/CargaDes/composer.json" value="--no-interaction --ansi --verbose --optimize" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/rama_1" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="validate C:/Users/LanPort80/PhpstormProjects/CargaDes/composer.json" value="--no-interaction --ansi --verbose --with-dependencies" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -85,6 +102,7 @@
       <updated>1580127235501</updated>
       <workItem from="1580127239425" duration="7334000" />
       <workItem from="1580139072245" duration="2365000" />
+      <workItem from="1580209150673" duration="532000" />
     </task>
     <task id="LOCAL-00001" summary="Было исправлено много ошибок">
       <created>1580130699139</created>
@@ -127,13 +145,25 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Было исправлено много ошибок" />
     <MESSAGE value="Изменения в описании" />
     <MESSAGE value="маленькая модивикация" />
     <MESSAGE value="маленькая модификация" />
-    <option name="LAST_COMMIT_MESSAGE" value="маленькая модификация" />
+    <MESSAGE value="исправление ошибок" />
+    <option name="LAST_COMMIT_MESSAGE" value="исправление ошибок" />
   </component>
   <component name="WindowStateProjectService">
     <state x="272" y="64" key="#Composer" timestamp="1580135165398">
@@ -156,18 +186,26 @@
       <screen x="0" y="0" width="1280" height="760" />
     </state>
     <state x="431" y="272" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.760@0.0.1280.760" timestamp="1580130027410" />
-    <state x="318" y="0" key="CommitChangelistDialog2" timestamp="1580140864767">
+    <state x="318" y="0" key="CommitChangelistDialog2" timestamp="1580209698406">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state x="318" y="0" key="CommitChangelistDialog2/0.0.1280.760@0.0.1280.760" timestamp="1580140864767" />
-    <state x="496" y="295" key="ComposerDumpAutoloadDialog" timestamp="1580139210680">
+    <state x="318" y="0" key="CommitChangelistDialog2/0.0.1280.760@0.0.1280.760" timestamp="1580209698406" />
+    <state x="496" y="295" key="ComposerDumpAutoloadDialog" timestamp="1580209354306">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state x="496" y="295" key="ComposerDumpAutoloadDialog/0.0.1280.760@0.0.1280.760" timestamp="1580139210680" />
+    <state x="496" y="295" key="ComposerDumpAutoloadDialog/0.0.1280.760@0.0.1280.760" timestamp="1580209354306" />
     <state x="464" y="322" key="ComposerInitDialogKey" timestamp="1580127678940">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
     <state x="464" y="322" key="ComposerInitDialogKey/0.0.1280.760@0.0.1280.760" timestamp="1580127678940" />
+    <state x="547" y="317" key="ComposerValidateDialog" timestamp="1580209290781">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="547" y="317" key="ComposerValidateDialog/0.0.1280.760@0.0.1280.760" timestamp="1580209290781" />
+    <state x="413" y="149" key="FileChooserDialogImpl" timestamp="1580209481446">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="413" y="149" key="FileChooserDialogImpl/0.0.1280.760@0.0.1280.760" timestamp="1580209481446" />
     <state width="1200" height="166" key="GridCell.Tab.0.bottom" timestamp="1580136075168">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
@@ -184,17 +222,17 @@
       <screen x="0" y="0" width="1280" height="760" />
     </state>
     <state width="1200" height="166" key="GridCell.Tab.0.right/0.0.1280.760@0.0.1280.760" timestamp="1580136075168" />
-    <state x="412" y="220" key="PHPComposerAddDependencyDialogDimensionKey" timestamp="1580141026484">
+    <state x="412" y="220" key="PHPComposerAddDependencyDialogDimensionKey" timestamp="1580208959573">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state x="412" y="220" key="PHPComposerAddDependencyDialogDimensionKey/0.0.1280.760@0.0.1280.760" timestamp="1580141026484" />
+    <state x="412" y="220" key="PHPComposerAddDependencyDialogDimensionKey/0.0.1280.760@0.0.1280.760" timestamp="1580208959573" />
     <state x="272" y="139" key="Vcs.Push.Dialog.v2" timestamp="1580140885021">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
     <state x="272" y="139" key="Vcs.Push.Dialog.v2/0.0.1280.760@0.0.1280.760" timestamp="1580140885021" />
-    <state x="491" y="322" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580131386501">
+    <state x="491" y="322" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580208877779">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state x="491" y="322" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.760@0.0.1280.760" timestamp="1580131386501" />
+    <state x="491" y="322" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.760@0.0.1280.760" timestamp="1580208877779" />
   </component>
 </project>
