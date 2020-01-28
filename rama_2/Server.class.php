@@ -110,11 +110,11 @@ class Server extends Tecno
 
         //Обработка ошибок
         if ((curl_errno($this->ch) != 0 or $result === false) and !$this->erroff) {
-            return array("result"=>"<br>cURL Error: " . curl_error($this->ch) . " (" . curl_errno($this->ch) . ")", "test"=>false);
+            return array("result" => "<br>cURL Error: " . curl_error($this->ch) . " (" . curl_errno($this->ch) . ")", "test" => false);
         } elseif ($info['http_code'] != 200 and !$this->erroff) {
-            return array("result"=>"<br>HTTP-Error: " . $info['http_code'], "test"=>false);
+            return array("result" => "<br>HTTP-Error: " . $info['http_code'], "test" => false);
         } elseif ((curl_errno($this->ch) != 0 or $result === false or $info['http_code'] != 200) and $this->erroff) {
-            return array("result"=>false, "test"=>false);
+            return array("result" => false, "test" => false);
         }
 
         //Отладка
@@ -128,7 +128,7 @@ class Server extends Tecno
 
         curl_close($this->ch);
 
-        return array("result"=>$result, "test"=>"ok");
+        return array("result" => $result, "test" => "ok");
     }
 
     /*******************************************
