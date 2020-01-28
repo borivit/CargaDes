@@ -36,8 +36,8 @@ class Server extends Tecno
     /*******************************************
      * Скачивание/закачивание файлов
      *******************************************************************
-     * @param $type
-     * @return bool|string - Либо False, либо ошибка
+     * @param $type - s скачиваем, u отдаем
+     * @return bool|array - Либо False, либо ошибка
      */
     public function start($type)
     {
@@ -45,7 +45,7 @@ class Server extends Tecno
             return $this->serverD();
         } elseif ($type == 'u') {
             $fileU = $this->serverFiles();
-            if (!$fileU) return $this->msg('error_4', $this->lang);
+            if (!$fileU) return array("result"=>$this->msg('error_4', $this->lang), "test"=>false);
             return $this->serverU($fileU);
         }
         return true;
