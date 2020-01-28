@@ -11,7 +11,7 @@ class Server extends Tecno
     public $post = array();//Массив данных для передачи методом POST вместе с файлами
     public $progress = 1;//Подключение/отключение индикатора
     public $speed = 0;//Ограничение скорости
-    public $style = '/vendor/borivit/cargades/rama_2/css/style.cargades.css';//Подключение стиля
+    public $style = './vendor/borivit/cargades/rama_2/css/style.cargades.css';//Подключение стиля
     public $color = '4098D3';//Цвет линии прогресса загрузки
     public $erroff = false;//Отключение вывода ошибок
     public $debug = false;//Отладка
