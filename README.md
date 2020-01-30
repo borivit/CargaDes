@@ -30,9 +30,9 @@ $server->remoteUrl = 'http://borivit.com/test/file.zip';
 $server->realFilePath = dirname(  __FILE__ ) . '/file.zip';
 
 $CargaDes->setOnStart(new Exe($server, 's'));
-$result = $CargaDes->Start();
+$r = $CargaDes->Start();
 	
-if( $result != false ) {echo $result;}
+if ($r['test'] == false) { echo $r['result'];}
 
 //--- Отдаем файл на удаленный сервер со своего сервера
 $server = new Server();
@@ -44,9 +44,9 @@ $server->realFilePath = dirname(  __FILE__ ) . file.zip;//Можно испол�
 $server->post = array( 'login' => 'test', 'pass' => '12345' );//Любые значения которые вы хотите передать на сервер
 
 $CargaDes->setOnStart(new Exe($server, 'u'));
-$result = $CargaDes->Start();
+$r = $CargaDes->Start();
 	
-if( $result != false ) {echo $result;}
+if ($r['test'] == false) { echo $r['result'];}
 
 ?>
 ```
