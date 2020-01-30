@@ -1,9 +1,16 @@
 <?php
 
-/*******************************************
- * Вспомогательный класс.
- *******************************************************************
- */
+/*
+-------------------------------------------------------------------------------------------
+ | @copyright  Copyright (C) 2019 - 2020 Borys Nazarenkov. All rights reserved.           |
+ | @license    GNU General Public License version 3 or later; see LICENSE.txt             |
+ | @see        https://github.com/borivit/CargaDes/                                       |
+-------------------------------------------------------------------------------------------
+ | Файл: Tecno.class.php
+ | Назначение: Вспомогательный класс
+-------------------------------------------------------------------------------------------
+*/
+
 class Tecno extends Mensajes
 {
     public $data = array();
@@ -44,28 +51,26 @@ class Tecno extends Mensajes
     /*******************************************
      * Удаление тегов и текста между ними
      *******************************************************************
-     * @param string $txt -    Текст в котором производится замена
-     * @return string
+     * @param string $txt -  Текст в котором производится замена
+     * @return string - Обработанный текст
      */
     public function delBlock($txt)
     {
         $find_preg = $replace_preg = array();
-        if (sizeof($this->block_data)) {
-            foreach ($this->block_data as $key_find => $key_replace) {
-                $find_preg[] = $key_find;
-                $replace_preg[] = $key_replace;
-            }
 
-            return preg_replace($find_preg, $replace_preg, $txt);
+        foreach ($this->block_data as $key_find => $key_replace) {
+            $find_preg[] = $key_find;
+            $replace_preg[] = $key_replace;
         }
-        return false;
+
+        return preg_replace($find_preg, $replace_preg, $txt);
     }
 
     /*******************************************
      * Замена значений
      *******************************************************************
      * @param string $txt -    Текст в котором производится замена
-     * @return string
+     * @return string - Обработанный текст
      */
     public function replaceVar($txt)
     {
@@ -82,7 +87,7 @@ class Tecno extends Mensajes
      * Автоматизация удаления/замены тегов и значений
      *******************************************************************
      * @param string $txt -    Текст в котором производится замена
-     * @return string
+     * @return string - Обработанный текст
      */
     public function compilePl($txt)
     {
@@ -96,7 +101,7 @@ class Tecno extends Mensajes
      * Возвращает MIME-тип содержимого файла и проверка на его существование
      *******************************************************************
      * @param string $realFilePath - Путь к проверяемому файлу.
-     * @return bool|string - тип файла
+     * @return bool|string - тип файла или False
      */
     public function mime_type($realFilePath)
     {
@@ -105,77 +110,76 @@ class Tecno extends Mensajes
             return false;
         }
 
-        if (!function_exists('mime_content_type')) {
-
-            $mime_types = array(
-
-                'txt' => 'text/plain',
-                'htm' => 'text/html',
-                'html' => 'text/html',
-                'php' => 'text/html',
-                'css' => 'text/css',
-                'js' => 'application/javascript',
-                'json' => 'application/json',
-                'xml' => 'application/xml',
-                'swf' => 'application/x-shockwave-flash',
-                'flv' => 'video/x-flv',
-
-                // images
-                'png' => 'image/png',
-                'jpe' => 'image/jpeg',
-                'jpeg' => 'image/jpeg',
-                'jpg' => 'image/jpeg',
-                'gif' => 'image/gif',
-                'bmp' => 'image/bmp',
-                'ico' => 'image/vnd.microsoft.icon',
-                'tiff' => 'image/tiff',
-                'tif' => 'image/tiff',
-                'svg' => 'image/svg+xml',
-                'svgz' => 'image/svg+xml',
-
-                // archives
-                'zip' => 'application/x-zip-compressed',
-                'rar' => 'application/x-rar-compressed',
-                'exe' => 'application/x-msdownload',
-                'msi' => 'application/x-msdownload',
-                'cab' => 'application/vnd.ms-cab-compressed',
-
-                // audio/video
-                'mp3' => 'audio/mpeg',
-                'qt' => 'video/quicktime',
-                'mov' => 'video/quicktime',
-
-                // adobe
-                'pdf' => 'application/pdf',
-                'psd' => 'image/vnd.adobe.photoshop',
-                'ai' => 'application/postscript',
-                'eps' => 'application/postscript',
-                'ps' => 'application/postscript',
-
-                // ms office
-                'doc' => 'application/msword',
-                'rtf' => 'application/rtf',
-                'xls' => 'application/vnd.ms-excel',
-                'ppt' => 'application/vnd.ms-powerpoint',
-
-                // open office
-                'odt' => 'application/vnd.oasis.opendocument.text',
-                'ods' => 'application/vnd.oasis.opendocument.spreadsheet',
-            );
-
-            $ext = strtolower(array_pop(explode('.', $realFilePath)));
-            if (array_key_exists($ext, $mime_types)) {
-                return $mime_types[$ext];
-            } elseif (function_exists('finfo_open')) {
-                $finfo = finfo_open(FILEINFO_MIME);
-                $mimetype = finfo_file($finfo, $realFilePath);
-                finfo_close($finfo);
-                return $mimetype;
-            } else {
-                return 'application/octet-stream';
-            }
-        } else {
+        if (function_exists('mime_content_type')) {
             return mime_content_type($realFilePath);
+        }
+
+        $mime_types = array(
+
+            'txt' => 'text/plain',
+            'htm' => 'text/html',
+            'html' => 'text/html',
+            'php' => 'text/html',
+            'css' => 'text/css',
+            'js' => 'application/javascript',
+            'json' => 'application/json',
+            'xml' => 'application/xml',
+            'swf' => 'application/x-shockwave-flash',
+            'flv' => 'video/x-flv',
+
+            // images
+            'png' => 'image/png',
+            'jpe' => 'image/jpeg',
+            'jpeg' => 'image/jpeg',
+            'jpg' => 'image/jpeg',
+            'gif' => 'image/gif',
+            'bmp' => 'image/bmp',
+            'ico' => 'image/vnd.microsoft.icon',
+            'tiff' => 'image/tiff',
+            'tif' => 'image/tiff',
+            'svg' => 'image/svg+xml',
+            'svgz' => 'image/svg+xml',
+
+            // archives
+            'zip' => 'application/x-zip-compressed',
+            'rar' => 'application/x-rar-compressed',
+            'exe' => 'application/x-msdownload',
+            'msi' => 'application/x-msdownload',
+            'cab' => 'application/vnd.ms-cab-compressed',
+
+            // audio/video
+            'mp3' => 'audio/mpeg',
+            'qt' => 'video/quicktime',
+            'mov' => 'video/quicktime',
+
+            // adobe
+            'pdf' => 'application/pdf',
+            'psd' => 'image/vnd.adobe.photoshop',
+            'ai' => 'application/postscript',
+            'eps' => 'application/postscript',
+            'ps' => 'application/postscript',
+
+            // ms office
+            'doc' => 'application/msword',
+            'rtf' => 'application/rtf',
+            'xls' => 'application/vnd.ms-excel',
+            'ppt' => 'application/vnd.ms-powerpoint',
+
+            // open office
+            'odt' => 'application/vnd.oasis.opendocument.text',
+            'ods' => 'application/vnd.oasis.opendocument.spreadsheet',
+        );
+
+        $ext = strtolower(array_pop(explode('.', $realFilePath)));
+        if (array_key_exists($ext, $mime_types)) {
+            return $mime_types[$ext];
+        } elseif (function_exists('finfo_open')) {
+            $finfo = finfo_open(FILEINFO_MIME);
+            $mimetype = finfo_file($finfo, $realFilePath);
+            finfo_close($finfo);
+            return $mimetype;
+        } else {
+            return 'application/octet-stream';
         }
     }
 }

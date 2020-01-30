@@ -1,9 +1,16 @@
 <?php
 
-/*******************************************
- * Класс сообщений.
- *******************************************************************
- */
+/*
+-------------------------------------------------------------------------------------------
+ | @copyright  Copyright (C) 2019 - 2020 Borys Nazarenkov. All rights reserved.           |
+ | @license    GNU General Public License version 3 or later; see LICENSE.txt             |
+ | @see        https://github.com/borivit/CargaDes/                                       |
+-------------------------------------------------------------------------------------------
+ | Файл: Mensajes.class.php
+ | Назначение: Выдает нужное сообщение на нужном языке
+-------------------------------------------------------------------------------------------
+*/
+
 class Mensajes
 {
     public $idioma = array(
@@ -26,10 +33,11 @@ class Mensajes
      *******************************************************************
      * @param $var - Псевдоним сообщения
      * @param $lng - Язык сообщения
-     * @return string
+     * @return string - Сообщение на нужном языке
      */
     public function msg($var, $lng)
     {
+        if (empty($this->idioma[$lng][$var])) return "error-" . $var;
         return $this->idioma[$lng][$var];
     }
 

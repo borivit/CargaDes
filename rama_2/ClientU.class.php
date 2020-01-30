@@ -1,9 +1,16 @@
 <?php
 
-/*******************************************
- * Формирует код для загрузки файла на сервер пользователем.
- *******************************************************************
- */
+/*
+-------------------------------------------------------------------------------------------
+ | @copyright  Copyright (C) 2019 - 2020 Borys Nazarenkov. All rights reserved.           |
+ | @license    GNU General Public License version 3 or later; see LICENSE.txt             |
+ | @see        https://github.com/borivit/CargaDes/                                       |
+-------------------------------------------------------------------------------------------
+ | Файл: ClientU.class.php
+ | Назначение: Формирует код для загрузки файла на сервер пользователем через боаузер
+-------------------------------------------------------------------------------------------
+*/
+
 class ClientU extends Tecno
 {
     public $url_server;//Путь к скрипту на сервере. Пример: "http://borivit.com/test/priem.php"
@@ -52,7 +59,7 @@ class ClientU extends Tecno
     /*******************************************
      * Загрузка файлов на сервер через браузер с индикацией процесса
      *******************************************************************
-     * @return string - готовый скрипт
+     * @return bool|string - готовый скрипт
      */
 
     public function code()
@@ -84,7 +91,10 @@ class ClientU extends Tecno
         $this->set('{color}', $this->color);
         $this->set('{debug}', !$this->debug ? 'false' : 'true');
 
-        return $this->compilePl($pl);
+        $result = $this->compilePl($pl);
+
+        if (empty($result)) return false;
+        return $result;
 
     }
 }

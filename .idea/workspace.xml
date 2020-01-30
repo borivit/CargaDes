@@ -7,14 +7,13 @@
   <component name="ChangeListManager">
     <list default="true" id="a9dc9d2c-0fc7-4aea-acfc-cee4f37d7744" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ejemplos/ejemplo_1.php" beforeDir="false" afterPath="$PROJECT_DIR$/ejemplos/ejemplo_1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ejemplos/ejemplo_2.php" beforeDir="false" afterPath="$PROJECT_DIR$/ejemplos/ejemplo_2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ejemplos/ejemplo_3.php" beforeDir="false" afterPath="$PROJECT_DIR$/ejemplos/ejemplo_3.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ejemplos/ejemplo_4.php" beforeDir="false" afterPath="$PROJECT_DIR$/ejemplos/ejemplo_4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ejemplos/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/ejemplos/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rama_2/CargaDes.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/rama_2/CargaDes.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rama_2/ClientD.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/rama_2/ClientD.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rama_2/ClientU.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/rama_2/ClientU.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rama_2/Exe.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/rama_2/Exe.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rama_2/Mensajes.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/rama_2/Mensajes.class.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rama_2/Server.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/rama_2/Server.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rama_2/css/style.cargades.css" beforeDir="false" afterPath="$PROJECT_DIR$/rama_2/css/style.cargades.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rama_2/Tecno.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/rama_2/Tecno.class.php" afterDir="false" />
     </list>
     <list id="9ab98ed0-f7a5-4b84-b4e6-09e877f9bd50" name="Add files via upload" comment="" />
     <list id="acdc09ee-4186-45d0-ac10-402a94985bdc" name="Revert &quot;маленькая модификация&quot;" comment="" />
@@ -105,6 +104,7 @@
       <workItem from="1580139072245" duration="2365000" />
       <workItem from="1580209150673" duration="1265000" />
       <workItem from="1580213330026" duration="12103000" />
+      <workItem from="1580398485296" duration="3890000" />
     </task>
     <task id="LOCAL-00001" summary="Было исправлено много ошибок">
       <created>1580130699139</created>
@@ -211,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580339804400</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Исправление ошибок">
+      <created>1580397750044</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1580397750044</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,7 +268,8 @@
     <MESSAGE value="маленькая модификация" />
     <MESSAGE value="исправление ошибок" />
     <MESSAGE value="Добавление примеров" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавление примеров" />
+    <MESSAGE value="Исправление ошибок" />
+    <option name="LAST_COMMIT_MESSAGE" value="Исправление ошибок" />
   </component>
   <component name="WindowStateProjectService">
     <state x="272" y="64" key="#Composer" timestamp="1580135165398">
@@ -284,10 +292,10 @@
       <screen x="0" y="0" width="1280" height="760" />
     </state>
     <state x="431" y="272" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.760@0.0.1280.760" timestamp="1580397242556" />
-    <state x="318" y="0" key="CommitChangelistDialog2" timestamp="1580339798097">
+    <state x="318" y="0" key="CommitChangelistDialog2" timestamp="1580397747445">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state x="318" y="0" key="CommitChangelistDialog2/0.0.1280.760@0.0.1280.760" timestamp="1580339798097" />
+    <state x="318" y="0" key="CommitChangelistDialog2/0.0.1280.760@0.0.1280.760" timestamp="1580397747445" />
     <state x="496" y="295" key="ComposerDumpAutoloadDialog" timestamp="1580209354306">
       <screen x="0" y="0" width="1280" height="760" />
     </state>

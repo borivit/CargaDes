@@ -1,9 +1,16 @@
 <?php
 
-/*******************************************
- * Запускает команды.
- *******************************************************************
- */
+/*
+-------------------------------------------------------------------------------------------
+ | @copyright  Copyright (C) 2019 - 2020 Borys Nazarenkov. All rights reserved.           |
+ | @license    GNU General Public License version 3 or later; see LICENSE.txt             |
+ | @see        https://github.com/borivit/CargaDes/                                       |
+-------------------------------------------------------------------------------------------
+ | Файл: Exe.class.php
+ | Назначение: Выполняет команд
+-------------------------------------------------------------------------------------------
+*/
+
 class Exe implements Command
 {
     private $com;
@@ -27,11 +34,12 @@ class Exe implements Command
     /*******************************************
      * Выполнение команд
      *******************************************************************
+     * @return bool|string - Либо результат выполнения команды, либо ошибка типа команды
      */
     public function exe()
     {
         if ($this->arg_1 == 's' or $this->arg_1 == 'u') return $this->com->start($this->arg_1);
         if ($this->arg_1 == 'p') return $this->com->code($this->arg_2);
-        return true;
+        return false;
     }
 }

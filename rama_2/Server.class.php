@@ -1,9 +1,16 @@
 <?php
 
-/*******************************************
- * Отправляет/получает файлы между серверами.
- *******************************************************************
- */
+/*
+-------------------------------------------------------------------------------------------
+ | @copyright  Copyright (C) 2019 - 2020 Borys Nazarenkov. All rights reserved.           |
+ | @license    GNU General Public License version 3 or later; see LICENSE.txt             |
+ | @see        https://github.com/borivit/CargaDes/                                       |
+-------------------------------------------------------------------------------------------
+ | Файл: Server.class.php
+ | Назначение: Отправляет/получает файлы между серверами
+-------------------------------------------------------------------------------------------
+*/
+
 class Server extends Tecno
 {
     public $remoteUrl;//Путь к удаленному серверу.
@@ -37,7 +44,7 @@ class Server extends Tecno
      * Скачивание/закачивание файлов
      *******************************************************************
      * @param $type - s скачиваем, u отдаем
-     * @return bool|array - Либо False, либо ошибка
+     * @return bool|array - Либо массив с данными выполнения, либо ошибка типа команды
      */
     public function start($type)
     {
@@ -48,7 +55,7 @@ class Server extends Tecno
             if (!$fileU) return array("result" => '<br>' . $this->msg('error_4', $this->lang), "test" => false);
             return $this->serverU($fileU);
         }
-        return true;
+        return false;
     }
 
     /*******************************************
@@ -178,7 +185,7 @@ class Server extends Tecno
     /*******************************************
      * Забераем файл с удаленного сервера на свой сервер - $CargaDes->serverD();
      *******************************************************************
-     * @return bool|string - False успешное завершение или текст ошибки
+     * @return array - Массив с данными о завершении или текстом ошибки
      */
     public function serverD()
     {
@@ -221,7 +228,7 @@ class Server extends Tecno
      * Отдаем файл на удаленный сервер со своего сервера - $CargaDes->serverU($fileU);
      *******************************************************************
      * @param string/array  $fileU     - Массив для POST отправки.
-     * @return bool|string - False успешное завершение или текст ошибки
+     * @return array - Массив с данными о завершении или текстом ошибки
      */
 
     public function serverU($fileU)
