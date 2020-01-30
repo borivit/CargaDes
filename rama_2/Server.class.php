@@ -101,7 +101,7 @@ class Server extends Tecno
     /*******************************************
      * Завершение Curl
      *******************************************************************
-     * @return bool|string - Полученный результат
+     * @return array - Полученный результат
      */
     public function curlExe()
     {
@@ -125,8 +125,7 @@ class Server extends Tecno
             foreach ($info as $i => $key) {
                 if (!is_array($key)) {
                     echo $i . ' -> ' . $key . '<br>';
-                }
-                else {
+                } else {
                     echo $i . ' -> ';
                     print_r($key);
                     echo '<br>';

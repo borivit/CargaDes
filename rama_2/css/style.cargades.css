@@ -1,8 +1,8 @@
 .client-progress-bar {
-	display: flex;/*inline-flex;*/
-	vertical-align: middle;
+    display: flex; /*inline-flex;*/
+    vertical-align: middle;
     width: 450px;
-	height: 3px;
+    height: 3px;
     padding: 2px;
     border: 1px solid #aaa;
     background: #fff;
@@ -15,17 +15,17 @@
     white-space: nowrap;
     padding: 1px 0;
     text-indent: 5px;
-	text-align: center;
+    text-align: center;
     width: 450px;
-	height: 1px;
-	box-shadow: inset 0px 0px 0px #4098D3;
+    height: 1px;
+    box-shadow: inset 0px 0px 0px #4098D3;
 }
 
 .server-progress-bar {
-	display: inline-flex;
-	vertical-align: middle;
+    display: inline-flex;
+    vertical-align: middle;
     width: 465px;
-	height: 18px;
+    height: 18px;
     padding: 2px;
     border: 1px solid #aaa;
     background: #fff;
@@ -38,40 +38,45 @@
     white-space: nowrap;
     padding: 1px 0;
     text-indent: 5px;
-	text-align: center;
+    text-align: center;
     width: 465px;
-	height: 15px;
-	box-shadow: inset 0px 0px 0px #4098D3;
+    height: 15px;
+    box-shadow: inset 0px 0px 0px #4098D3;
 }
 
 .btn-del {
-	cursor: pointer;
-	border: 1px solid #aaa;
-	padding: 3px 5px 5px 5px;
-	margin: 10px;
+    cursor: pointer;
+    border: 1px solid #aaa;
+    padding: 3px 5px 5px 5px;
+    margin: 10px;
     white-space: nowrap;
-	vertical-align: middle;
+    vertical-align: middle;
 }
+
 .file-info {
-	padding: 5px 0px 3px 0px;
+    padding: 5px 0px 3px 0px;
 }
+
 .file-name {
-	display: inline-flex;
-	margin-right: 10px;
-	margin-bottom: 5px;
+    display: inline-flex;
+    margin-right: 10px;
+    margin-bottom: 5px;
     vertical-align: sub;
 }
+
 .btn-input {
-	
+
 }
+
 .btn-enviar {
-	
+
 }
+
 .file-container {
-	text-align: left;
+    text-align: left;
 }
 
 .server-info {
-	color:red;
-	text-align:center;
+    color: red;
+    text-align: center;
 }

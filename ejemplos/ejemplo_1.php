@@ -1,6 +1,6 @@
 <?php
 spl_autoload_register(function ($class) {
-    include $_SERVER['DOCUMENT_ROOT'] . '/vendor/borivit/cargades/rama_2/' . $class . '.class.php';
+    include $_SERVER['DOCUMENT_ROOT'] . $_GET['path_'] . $class . '.class.php';
 });
 
 header('Content-Type: text/html; charset=UTF-8');
